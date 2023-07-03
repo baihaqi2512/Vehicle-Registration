@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./line-awesome/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Side navigation -->
+    <div id="mySidenav" class="sidenav">
+        <div class="logo">
+            <img src="./UTeM-Vector-Logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li class="menu-item active">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="menu-item">
+                <i class="fa fa-car" aria-hidden="true"></i>
+                <a href="./vehicle-registration.html">Vehicle Registration</a>
+            </li>
+        </ul>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <div id="header" class="header">
+        <div class="header-title">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <h6>Dashboard</h6>
+        </div>
+        <div class="logout-btn" onclick="window.location.href = './login.html';">
+            <span>Logout</span>
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div id="main">
+        <div class="sub-header">
+            <div class="subtitle">
+                <p>Visitor Statistic on 9 July 2023</p>
+            </div>
+            <div class="header-function" style="display: flex;">
+                <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#statistic-setting"></i>
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                <!-- <h5>3/07/2023</h5> -->
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="statistic-box">
+                    <div class="stat-icon total"><i class="fa fa-car" aria-hidden="true"></i></div>
+                    <div class="stat-title">
+                        <p>Total Vehicles Entry</p>
+                        <p class="stat-result">150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic-box">
+                    <div class="stat-icon staff"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                    <div class="stat-title">
+                        <p>Total Staff Vehicles</p>
+                        <p class="stat-result">150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic-box">
+                    <div class="stat-icon student"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                    <div class="stat-title">
+                        <p>Total Student Vehicles</p>
+                        <p class="stat-result">150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic-box">
+                    <div class="stat-icon visitor"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                    <div class="stat-title">
+                        <p>Total Visitor Vehicles</p>
+                        <p class="stat-result">150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="statistic-box"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="statistic-box"></div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal fade" id="statistic-setting" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Set Statistic Time Frame</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">View Statistic By</label>
+                    <select class="form-control">
+                      <option>Day</option>
+                      <option>Week</option>
+                      <option>Month</option>
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Date</label>
+                    <input type="date" class="form-control">
+                  </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to control opening and closing of the side navigation -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "220px";
+            document.getElementById("main").style.marginLeft = "220px";
+            document.getElementById("header").style.marginLeft = "220px";
+            document.getElementsByClassName("openbtn")[0].style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("header").style.marginLeft = "0";
+            document.getElementsByClassName("openbtn")[0].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
