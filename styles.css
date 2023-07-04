@@ -41,8 +41,15 @@ body {
     text-align: center;
 }
 
-.form-title h3 {
+.form-title h3,h4 {
     font-weight: 600;
+    margin-bottom: 8px !important;
+}
+
+.form-title i {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #007bff;
 }
 
 .module-form-title {
@@ -55,11 +62,17 @@ body {
     border-radius: 30px;
     padding: 10px 0;
 }
+.btn-success.btn-custom2 {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
 
 .link-container {
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px 0;
     color: #007bff;
 }
@@ -167,6 +180,7 @@ li.menu-item {
     background: #FFF;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
     padding: 24px;
+    border-top: solid 6px #2a4189;
 }
 
 .form-group {
@@ -304,6 +318,90 @@ h6 {
 .button-section {
     display: flex;
     justify-content: end;
+}
+
+.display-body{
+    background: linear-gradient(180deg, #002166 0%, #0067AA 100%);
+    padding: 15px 20px;
+}
+
+.frame-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 12px #D2D3D6;
+    width: 96%;
+    height: 95%;
+    padding: 20px;
+}
+
+.display-logo img {
+    width: 180px;
+}
+
+.visitor-info {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    padding: 24px 24px;
+}
+
+.visitor-detail {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.visitor-detail p {
+    margin: 0;
+}
+
+.display-logo {
+    margin-bottom: 32px;
+    text-align: center;
+}
+.display-time {
+    text-align: end;
+}
+
+.section-display {
+    color: #fff;
+    text-align: center;
+    height: 90%;
+}
+
+.plate-box {
+    border-radius: 8px;
+    border: 5px solid #FFF;
+    background: rgba(0, 0, 0, 0.44);
+    margin: 0 20px;
+    padding: 8px 0;
+}
+
+.plate-no {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+.visitor-name {
+    margin: 0 24px;
+}
+
+.welcome-title {
+    margin-bottom: 32px;
+}
+.row{
+    height: 100%;
+}
+
+.display-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
 }
 
 @media (max-width: 480px) {
