@@ -7,10 +7,10 @@ body {
 .background-image {
     width: 100%;
     height: 100%;
-    background-image: url("./utem-entrance.jpg");
+    background-image: url("./mainPicUTeM.jpg");
     background-size: cover;
     position: relative;
-    filter: blur(1px);
+    filter: blur(0.5px);
 }
 
 .custom-container {
@@ -259,20 +259,32 @@ h6 {
     font-size: 24px;
 }
 
-.stat-icon.total {
+.stat-icon.blue {
     background: linear-gradient(180deg, rgba(75, 126, 217, 0.71) 0%, #194799 100%);
 }
 
-.stat-icon.staff {
+.stat-icon.green {
     background: linear-gradient(180deg, #A9D5BE 0%, #60B286 100%);
 }
 
-.stat-icon.student {
+.stat-icon.yellow {
     background: linear-gradient(180deg, #FFEDA3 0%, #E3B600 100%);
 }
 
-.stat-icon.visitor {
+.stat-icon.turqoise {
     background: linear-gradient(180deg, rgba(75, 186, 217, 0.71) 0%, #198699 100%);
+}
+
+.stat-icon.purple {
+    background: linear-gradient(180deg, rgba(160, 75, 217, 0.71) 0%, #6a1999 100%);
+}
+
+.stat-icon.red {
+    background: linear-gradient(180deg, rgba(217, 75, 75, 0.71) 0%, #991919 100%);
+}
+
+.stat-icon.orange {
+    background: linear-gradient(180deg, rgba(217, 177, 75, 0.71) 0%, #997019 100%);
 }
 
 
