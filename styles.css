@@ -337,7 +337,8 @@ h6 {
 }
 
 .display-logo img {
-    width: 180px;
+    width: 150px;
+    position: absolute;
 }
 
 .visitor-info {
@@ -358,12 +359,10 @@ h6 {
     margin: 0;
 }
 
-.display-logo {
-    margin-bottom: 32px;
-    text-align: center;
-}
 .display-time {
     text-align: end;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .section-display {
@@ -381,17 +380,20 @@ h6 {
 }
 
 .plate-no {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
     margin-top: 32px;
 }
 
 .visitor-name {
     margin: 0 24px;
+    font-size: 42px;
+    font-weight: 600;
 }
 
 .welcome-title {
     margin-bottom: 32px;
+    font-size: 38px;
 }
 .row{
     height: 100%;
