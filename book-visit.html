@@ -29,15 +29,15 @@
             <img src="./UTEM-LOGO-01.svg" alt="Logo">
         </div>
         <ul>
-            <li class="menu-item active">
+            <li class="menu-item ">
                 <i class="fa fa-home" aria-hidden="true"></i>
-                <a href="#">Dashboard</a>
+                <a href="./dashboard.html">Dashboard</a>
             </li>
             <li class="menu-item">
                 <i class="fa fa-car" aria-hidden="true"></i>
                 <a href="./vehicle-registration.html">Vehicle Registration</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
                 <i class="fa fa-calendar" aria-hidden="true"></i>
                 <a href="./book-visit.html">Book a Visit</a>
             </li>
@@ -53,128 +53,45 @@
     <div id="header" class="header">
         <div class="header-title">
             <button class="openbtn" onclick="openNav()">&#9776;</button>
-            <h6>Dashboard</h6>
+            <h6>Book a Visit</h6>
         </div>
         <div class="logout-btn" onclick="window.location.href = './index.html';">
             <span>Logout</span>
             <i class="fa fa-sign-out" aria-hidden="true"></i>
         </div>
-
     </div>
     <!-- Main content -->
     <div id="main">
-        <div class="sub-header">
-            <div class="subtitle">
-                <p>Visitor Statistic on 9 July 2023</p>
+        <div class="content-box">
+            <div class="module-form-title">
+                <p>Please fill in the form to book a visit</p>
             </div>
-            <div class="header-function" style="display: flex;">
-                <i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#statistic-setting"></i>
-                <i class="fa fa-refresh" aria-hidden="true"></i>
-                <!-- <h5>3/07/2023</h5> -->
+            <hr>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Visiting purpose</label>
+                    <input type="text" class="form-control" placeholder="Enter your visiting purpose">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Visiting Location</label>
+                    <input type="text" class="form-control" placeholder="Enter your visiting location">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>From</label>
+                    <input type="date" name="from" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>To</label>
+                    <input type="date" name="to" class="form-control">
+                </div>
+            </div>
+            <div class="button-section">
+                <button class="btn btn-primary">Save</button>
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon blue"><i class="fa fa-car" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total Vehicles Entry</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon green"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total Staff Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon yellow"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total Student Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon turqoise"><i class="fa fa-id-card" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total Visitor Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon green"><i class="fa fa-user" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Registered Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon orange"><i class="fa fa-user-times" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Unregistered Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon red"><i class="fa fa-times-rectangle" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Vehicles Not Come Out</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sub-header">
-            <div class="subtitle">
-                <p>vehicle statistics by category on 9 July 2023</p>
-            </div>
-
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon green"><i class="fa fa-bus" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total 4 Tyre Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="statistic-box">
-                    <div class="stat-icon purple"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
-                    <div class="stat-title">
-                        <p>Total 2 Tyre Vehicles</p>
-                        <p class="stat-result">150</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="row">
-            <div class="col-md-8">
-                <div class="statistic-box"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="statistic-box"></div>
-            </div>
-        </div> -->
     </div>
 
 
@@ -182,7 +99,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Set Statistic Time Frame</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Set Statistic Time Frame</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -205,6 +122,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
